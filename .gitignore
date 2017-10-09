@@ -1,8 +1,34 @@
-/ant
-/bin
-/.classpath
-/lib
-/.project
-/res/CHANGES
-/res/README.md
-/.settings
+# Build
+MANIFEST.MF
+dependency-reduced-pom.xml
+
+# Compiled
+bin
+build
+dist
+lib
+out
+run
+target
+*.com
+*.class
+
+# Project
+.checkstyle
+.classpath
+.externalToolBuilders
+.gradle
+.nb-gradle
+.idea
+.project
+.settings
+eclipse
+nbproject
+atlassian-ide-plugin.xml
+build.xml
+nb-configuration.xml
+*.iml
+*.ipr
+*.iws
+*.launch
+*.number
