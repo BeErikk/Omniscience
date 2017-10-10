@@ -36,14 +36,33 @@ litemod {
         displayName = project.displayName
 
         // Change this to your name, or remove it if you don't want to include it in the metadata
-        author = 'Your name here'
+        author = project.author
 
+		description = project.description
+		
         // Uncomment any of the following lines and fill in your own details as required
 //      dependsOn = [ 'modid', 'othermod' ]
 //      requiredAPIs = [ 'someapi' ]
 //      tweakClass = 'name.of.tweaker.here'
 //      mixinConfigs = [ 'mixin.config.file.json', 'other.mixin.config.file.json' ]
     }
+}
+
+// Minimum version of Java required
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+sourceSets {
+    main {
+        java.srcDir 'java'
+        resources.srcDir 'res'
+    }
+}
+
+minecraft {
+    version = project.mcVersion
+    mappings = project.mappings
+    runDir = "run"
 }
 
 /**
