@@ -15,7 +15,7 @@
 package net.easymfne.omniscience;
 
 import com.mumfrey.liteloader.core.runtime.Obf;
-import com.mumfrey.liteloader.util.ObfuscationUtilities;
+//import com.mumfrey.liteloader.util.ObfuscationUtilities;
 
 /** Obfuscation reference helper. */
 public class OmniscienceObf extends Obf {
