@@ -1,34 +1,34 @@
 # Build
-MANIFEST.MF
-dependency-reduced-pom.xml
 
 # Compiled
-bin
-build
-dist
-lib
-out
-run
-target
+[Dd]ebug/
+[Bb]in/
+[Bb]uild/
+run/
 *.com
 *.class
 
 # Project
-.checkstyle
+.vs/
+.vscode/
+.settings/
+.gradle/
+.idea/
 .classpath
-.externalToolBuilders
-.gradle
-.nb-gradle
-.idea
 .project
-.settings
+.checkstyle
+.externalToolBuilders
+.nb-gradle
+gradlew
+gradlew.bat
+*.iml
+*.launch
+*.number
+
 eclipse
 nbproject
 atlassian-ide-plugin.xml
 build.xml
 nb-configuration.xml
-*.iml
 *.ipr
 *.iws
-*.launch
-*.number
