@@ -21,6 +21,7 @@ run/
 .nb-gradle
 gradlew
 gradlew.bat
+gradle/wrapper/gradle-wrapper.jar
 *.iml
 *.launch
 *.number
