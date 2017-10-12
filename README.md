@@ -1,11 +1,3 @@
-<center>[Source](https://github.com/EasyMFnE/Omniscience) |
-[Change Log](https://github.com/EasyMFnE/Omniscience/blob/master/CHANGES.log) |
-[Feature Request](https://github.com/EasyMFnE/Omniscience/issues) |
-[Bug Report](https://github.com/EasyMFnE/Omniscience/issues) |
-[Donate](https://www.paypal.com/cgi-bin/webscr?hosted_button_id=457RX2KYUDY5G&item_name=Omniscience&cmd=_s-xclick)</center>
-
-<center>**Latest Version:** v1.1.0 for mc1.8</center>
-
 ## About ##
 
 Omniscience is a very small, simple modification for Minecraft loaded by [LiteLoader](http://liteloader.com) and designed to allow users to see invisible entities and players as partially transparent.
