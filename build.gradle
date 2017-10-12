@@ -59,12 +59,6 @@ sourceSets {
     }
 }
 
-minecraft {
-    version = project.mcVersion
-    mappings = project.mappings
-    runDir = "run"
-}
-
 /**
  * This section allows you to customise your generated jar (litemod) file. By
  * default it includes the generated litemod.json file, however if you prefer to
