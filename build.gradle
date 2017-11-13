@@ -12,13 +12,8 @@ buildscript {
         }
     }
     dependencies {
-        //classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
         classpath 'net.minecraftforge.gradle:ForgeGradle:' + project.forgeGradleVersion
     }
-}
-
-ext {
-    displayName = project.hasProperty('displayName') ? project.displayName : "Specify displayName in gradle.properties"
 }
 
 apply plugin: 'net.minecraftforge.gradle.liteloader'
@@ -39,23 +34,22 @@ sourceSets {
     }
 }
 
+// Minimum version of Java required
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
 litemod {
     json {
-        name = project.name
-        displayName = project.displayName
+//        name = project.name
+//        displayName = project.displayName
         author = project.author
-		description = project.description        
         mcversion = project.targetVersion
-		revision = project.revision
+//		revision = project.revision  // seem to be a number field
+		description = project.description        
+        classTransformerClasses += project.classTransformer
     }
 }
 
 jar {
     from litemod.outputs
-    manifest.mainAttributes (
-        'Built-By': System.properties['user.name'],
-        'Created-By': System.properties['java.vm.version'] + " (" + System.properties['java.vm.vendor'] + ")",
-        'Implementation-Title': project.name,
-        'Implementation-Version': project.version
-    )
 }
